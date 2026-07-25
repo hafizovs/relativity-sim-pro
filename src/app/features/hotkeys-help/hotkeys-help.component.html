@@ -1,0 +1,24 @@
+<div class="overlay" (click)="close()" role="presentation">
+  <div
+    class="dialog"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="t('hotkeys.title')"
+    (click)="$event.stopPropagation()"
+  >
+    <header class="dialog__head">
+      <h2>{{ t('hotkeys.title') }}</h2>
+      <button type="button" class="dialog__close" (click)="close()">
+        {{ t('hotkeys.close') }}
+      </button>
+    </header>
+    <ul class="list">
+      @for (row of rows; track row.keys) {
+        <li>
+          <kbd>{{ row.keys }}</kbd>
+          <span>{{ t(row.labelKey) }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</div>
