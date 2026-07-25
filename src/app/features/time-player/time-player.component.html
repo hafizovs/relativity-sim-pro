@@ -1,0 +1,22 @@
+<div class="player">
+  <button
+    type="button"
+    class="player__btn"
+    [attr.aria-label]="t('a11y.playPause')"
+    [attr.aria-pressed]="isPlaying()"
+    (click)="toggle()"
+  >
+    {{ isPlaying() ? t('controls.pause') : t('controls.play') }}
+  </button>
+  <button type="button" class="player__btn" (click)="reset()">
+    {{ t('controls.reset') }}
+  </button>
+  <label class="player__scale">
+    <span>{{ t('controls.timeScale') }}</span>
+    <select [value]="timeScale()" (change)="onScale($event)">
+      @for (s of scales; track s) {
+        <option [value]="s">{{ s }}x</option>
+      }
+    </select>
+  </label>
+</div>

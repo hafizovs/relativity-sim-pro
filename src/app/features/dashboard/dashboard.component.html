@@ -1,0 +1,61 @@
+<div class="dashboard">
+  <nav class="mobile-tabs" aria-label="Views">
+    <button
+      type="button"
+      [class.active]="mobileTab() === 'cockpit'"
+      (click)="setTab('cockpit')"
+    >
+      {{ t('view.cockpit') }}
+    </button>
+    <button
+      type="button"
+      [class.active]="mobileTab() === 'observer'"
+      (click)="setTab('observer')"
+    >
+      {{ t('view.observer') }}
+    </button>
+    <button
+      type="button"
+      [class.active]="mobileTab() === 'telemetry'"
+      (click)="setTab('telemetry')"
+    >
+      {{ t('view.telemetry') }}
+    </button>
+  </nav>
+
+  <div class="dashboard__grid">
+    <section
+      class="panel panel--cockpit"
+      [class.panel--hidden-mobile]="mobileTab() !== 'cockpit'"
+    >
+      <header class="panel__label">{{ t('view.cockpit') }}</header>
+      <div class="panel__body">
+        <rsp-cockpit-view />
+      </div>
+    </section>
+
+    <section
+      class="panel panel--observer"
+      [class.panel--hidden-mobile]="mobileTab() !== 'observer'"
+    >
+      <header class="panel__label">{{ t('view.observer') }}</header>
+      <div class="panel__body">
+        <rsp-observer-view />
+      </div>
+    </section>
+
+    <section
+      class="panel panel--telemetry"
+      [class.panel--hidden-mobile]="mobileTab() !== 'telemetry'"
+    >
+      <rsp-telemetry-panel />
+    </section>
+  </div>
+
+  <footer class="bottom-bar">
+    <rsp-velocity-controls />
+    <rsp-time-player />
+    <rsp-experiment-panel />
+    <p class="twin-hud">{{ twinHud() }}</p>
+  </footer>
+</div>

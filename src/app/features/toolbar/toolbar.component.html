@@ -1,0 +1,57 @@
+<header class="toolbar">
+  <div class="brand">
+    <div class="brand__title">{{ t('app.title') }}</div>
+    <div class="brand__subtitle">{{ subtitle() }}</div>
+  </div>
+
+  <div class="presets" role="group" [attr.aria-label]="t('controls.velocity')">
+    @for (p of presets; track p.id) {
+      <button
+        type="button"
+        class="preset"
+        [class.preset--active]="isPresetActive(p.beta)"
+        [attr.aria-pressed]="isPresetActive(p.beta)"
+        (click)="applyPreset(p.beta)"
+      >
+        {{ t(p.labelKey) }}
+      </button>
+    }
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="actions">
+    <button
+      type="button"
+      class="action"
+      [attr.aria-label]="t('a11y.themeToggle')"
+      (click)="toggleTheme()"
+    >
+      {{ themeLabel() }}
+    </button>
+    <button
+      type="button"
+      class="action"
+      [attr.aria-label]="t('a11y.langToggle')"
+      (click)="toggleLang()"
+    >
+      {{ locale() === 'ru' ? 'RU' : 'EN' }}
+    </button>
+    <button
+      type="button"
+      class="action"
+      [attr.aria-label]="t('a11y.screenshot')"
+      (click)="takeScreenshot()"
+    >
+      {{ t('toolbar.screenshot') }}
+    </button>
+    <button
+      type="button"
+      class="action"
+      [attr.aria-label]="t('a11y.hotkeys')"
+      (click)="openHotkeys()"
+    >
+      {{ t('toolbar.hotkeys') }}
+    </button>
+  </div>
+</header>

@@ -1,0 +1,31 @@
+<div class="velocity">
+  <label class="velocity__label" for="rsp-beta-slider">{{ t('controls.velocity') }}</label>
+  <input
+    id="rsp-beta-slider"
+    class="velocity__slider"
+    type="range"
+    [min]="min"
+    [max]="max"
+    [step]="step"
+    [value]="beta()"
+    [attr.aria-label]="t('a11y.velocitySlider')"
+    [attr.aria-valuemin]="min"
+    [attr.aria-valuemax]="max"
+    [attr.aria-valuenow]="beta()"
+    [attr.aria-valuetext]="valueText()"
+    (input)="onInput($event)"
+  />
+  <input
+    class="velocity__number"
+    type="number"
+    [min]="min"
+    [max]="max"
+    [step]="step"
+    [value]="beta()"
+    (change)="onNumber($event)"
+  />
+  <span class="velocity__gamma" aria-live="polite">γ {{ gammaText() }}</span>
+  <button type="button" class="velocity__reset" (click)="resetSpeed()">
+    {{ t('controls.resetSpeed') }}
+  </button>
+</div>

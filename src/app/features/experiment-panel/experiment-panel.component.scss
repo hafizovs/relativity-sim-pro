@@ -1,0 +1,51 @@
+.experiment {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  max-width: 34rem;
+}
+
+.experiment__btn {
+  font-family: var(--rsp-font-mono);
+  font-size: 0.72rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--rsp-border);
+  cursor: pointer;
+}
+
+.experiment__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.experiment__btn--fwd {
+  background: color-mix(in srgb, var(--rsp-blueshift) 18%, var(--rsp-bg-panel-elevated));
+  color: var(--rsp-blueshift);
+  border-color: var(--rsp-blueshift);
+}
+
+.experiment__btn--back {
+  background: color-mix(in srgb, var(--rsp-redshift) 18%, var(--rsp-bg-panel-elevated));
+  color: var(--rsp-redshift);
+  border-color: var(--rsp-redshift);
+}
+
+.experiment__count {
+  font-family: var(--rsp-font-mono);
+  font-size: 0.72rem;
+  color: var(--rsp-text-muted);
+}
+
+.experiment__hint {
+  margin: 0;
+  flex-basis: 100%;
+  font-size: 0.68rem;
+  color: var(--rsp-text-muted);
+  line-height: 1.3;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--rsp-accent);
+  outline-offset: 2px;
+}

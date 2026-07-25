@@ -1,0 +1,63 @@
+<aside class="telemetry">
+  <h2 class="telemetry__title">{{ t('telemetry.title') }}</h2>
+
+  <section class="block">
+    <div class="row">
+      <span class="label">{{ t('telemetry.earthClocks') }}</span>
+      <span class="value value--earth">{{ earthText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.shipClocks') }}</span>
+      <span class="value value--ship">{{ shipText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.timeRatio') }}</span>
+      <span class="value">{{ ratioText() }}</span>
+    </div>
+    <div class="ratio-bar" [attr.aria-hidden]="true">
+      <div class="ratio-bar__fill" [style.width.%]="ratioBar()"></div>
+    </div>
+    <p class="hint">{{ twinHint() }}</p>
+  </section>
+
+  <section class="block">
+    <div class="row">
+      <span class="label">{{ t('telemetry.beta') }}</span>
+      <span class="value">{{ betaText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.velocity') }}</span>
+      <span class="value">{{ velocityText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.gamma') }}</span>
+      <span class="value value--accent">{{ gammaText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.restMass') }}</span>
+      <span class="value">{{ metrics().restMass.toFixed(2) }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.relMass') }}</span>
+      <span class="value value--warn">{{ relMassText() }}</span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.lengthRatio') }}</span>
+      <span class="value">{{ lengthRatioText() }}</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="row">
+      <span class="label">{{ t('telemetry.status') }}</span>
+      <span class="value">
+        {{ isPlaying() ? t('telemetry.playing') : t('telemetry.paused') }}
+      </span>
+    </div>
+    <div class="row">
+      <span class="label">{{ t('telemetry.lasers') }}</span>
+      <span class="value">{{ laserCount() }}</span>
+    </div>
+    <p class="mode">{{ modeText() }}</p>
+  </section>
+</aside>
