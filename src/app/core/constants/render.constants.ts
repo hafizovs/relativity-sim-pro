@@ -1,0 +1,13 @@
+export const MAX_DPR = 2;
+export const COCKPIT_FOCAL = 420;
+export const COCKPIT_BG = '#04060c';
+export const OBSERVER_BG = '#04060c';
+export const OBSERVER_PX_PER_WORLD = 0.35;
+export const OBSERVER_ZOOM_MIN = 0.4;
+export const OBSERVER_ZOOM_MAX = 2.5;
+export const OBSERVER_ZOOM_DEFAULT = 1;
+export const GRID_SPACING_WORLD = 100;
+export const SHIP_COLOR = '#3ec6ff';
+export const PLANET_OUTLINE = '#f0a94a';
+export const GHOST_SHIP_COLOR = 'rgba(62, 198, 255, 0.35)';
+export const CROSSHAIR_COLOR = 'rgba(62, 198, 255, 0.45)';
