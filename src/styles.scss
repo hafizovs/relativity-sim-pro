@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--rsp-font-ui);
+  background: var(--rsp-bg-deep);
+  color: var(--rsp-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:root,
+[data-theme='dark'] {
+  --rsp-bg-deep: #04060c;
+  --rsp-bg-panel: #0a101c;
+  --rsp-bg-panel-elevated: #121a2c;
+  --rsp-border: #1a2740;
+  --rsp-text: #e6eef9;
+  --rsp-text-muted: #8494ad;
+  --rsp-accent: #3ec6ff;
+  --rsp-accent-2: #f0a94a;
+  --rsp-danger: #ff5e5e;
+  --rsp-blueshift: #6ec8ff;
+  --rsp-redshift: #ff6b4a;
+  --rsp-grid: rgba(62, 198, 255, 0.08);
+  --rsp-glow: rgba(62, 198, 255, 0.28);
+  --rsp-font-ui: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --rsp-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+}
+
+[data-theme='light'] {
+  --rsp-bg-deep: #e6eef7;
+  --rsp-bg-panel: #f3f7fb;
+  --rsp-bg-panel-elevated: #ffffff;
+  --rsp-border: #c2d0e2;
+  --rsp-text: #0a101c;
+  --rsp-text-muted: #576a84;
+  --rsp-accent: #0b7fb8;
+  --rsp-accent-2: #b86a12;
+  --rsp-danger: #c62828;
+  --rsp-blueshift: #1565c0;
+  --rsp-redshift: #d84315;
+  --rsp-grid: rgba(11, 127, 184, 0.1);
+  --rsp-glow: rgba(11, 127, 184, 0.18);
+}
