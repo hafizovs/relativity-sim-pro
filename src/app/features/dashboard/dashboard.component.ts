@@ -6,9 +6,9 @@ import { ObserverViewComponent } from '../observer-view/observer-view.component'
 import { TelemetryPanelComponent } from '../telemetry/telemetry-panel.component';
 import { TimePlayerComponent } from '../time-player/time-player.component';
 import { VelocityControlsComponent } from '../velocity-controls/velocity-controls.component';
-import { I18nService } from '../../services/i18n.service';
-import { SpaceTimeStore } from '../../state/space-time.store';
-import { UiStore } from '../../state/ui.store';
+import { I18nService } from '../../core/services/i18n.service';
+import { SpaceTimeStore } from '../velocity-controls/space-time.store';
+import { UiStore } from '../../core/ui/ui.store';
 import type { MobileTabId } from '../../core/models/relativity.types';
 
 @Component({

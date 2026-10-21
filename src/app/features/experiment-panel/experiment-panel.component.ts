@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { MAX_ACTIVE_LASERS } from '../../core/constants/space.constants';
-import { I18nService } from '../../services/i18n.service';
-import { WorldService } from '../../services/world.service';
-import { WorldStore } from '../../state/world.store';
+import { I18nService } from '../../core/services/i18n.service';
+import { WorldService } from './world.service';
+import { WorldStore } from './world.store';
 
 @Component({
   selector: 'rsp-experiment-panel',

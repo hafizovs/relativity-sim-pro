@@ -1,10 +1,10 @@
 import { Injectable, inject } from '@angular/core';
 import type { Signal } from '@angular/core';
-import { BETA_STEP } from '../core/constants/physics.constants';
-import type { RelativityMetrics } from '../core/models/relativity-metrics.model';
-import { dilateStaticTime } from '../domain/relativity/time-dilation';
-import { SimulationStore } from '../state/simulation.store';
-import { SpaceTimeStore } from '../state/space-time.store';
+import { BETA_STEP } from '../../core/constants/physics.constants';
+import type { RelativityMetrics } from '../../core/models/relativity-metrics.model';
+import { dilateStaticTime } from '../../domain/relativity/time-dilation';
+import { SimulationStore } from '../time-player/simulation.store';
+import { SpaceTimeStore } from './space-time.store';
 
 @Injectable({ providedIn: 'root' })
 export class SpaceTimeService {

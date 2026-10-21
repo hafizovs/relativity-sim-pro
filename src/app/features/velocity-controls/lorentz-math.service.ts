@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-import { C } from '../core/constants/physics.constants';
-import { aberrateAngle, aberrateDirection } from '../domain/relativity/aberration';
+import { C } from '../../core/constants/physics.constants';
+import { aberrateAngle, aberrateDirection } from '../../domain/relativity/aberration';
 import {
   dopplerFactorGeneral,
   dopplerFactorHeadOn,
   shiftFrequency,
-} from '../domain/relativity/doppler';
-import { frequencyToRgb } from '../domain/relativity/frequency-to-rgb';
-import { contractLength } from '../domain/relativity/length-contraction';
-import { betaFromVelocity, clampBeta, gamma } from '../domain/relativity/lorentz-factor';
-import { dilateStaticTime } from '../domain/relativity/time-dilation';
+} from '../../domain/relativity/doppler';
+import { frequencyToRgb } from '../../domain/relativity/frequency-to-rgb';
+import { contractLength } from '../../domain/relativity/length-contraction';
+import { betaFromVelocity, clampBeta, gamma } from '../../domain/relativity/lorentz-factor';
+import { dilateStaticTime } from '../../domain/relativity/time-dilation';
 
 @Injectable({ providedIn: 'root' })
 export class LorentzMathService {

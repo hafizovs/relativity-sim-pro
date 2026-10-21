@@ -12,12 +12,12 @@ import {
   OBSERVER_ZOOM_MAX,
   OBSERVER_ZOOM_MIN,
 } from '../../core/constants/render.constants';
-import { I18nService } from '../../services/i18n.service';
-import { RenderLoopService } from '../../services/render-loop.service';
-import { ScreenshotService } from '../../services/screenshot.service';
-import { SpaceTimeStore } from '../../state/space-time.store';
-import { UiStore } from '../../state/ui.store';
-import { WorldStore } from '../../state/world.store';
+import { I18nService } from '../../core/services/i18n.service';
+import { RenderLoopService } from '../../core/services/render-loop.service';
+import { ScreenshotService } from '../../core/services/screenshot.service';
+import { SpaceTimeStore } from '../velocity-controls/space-time.store';
+import { UiStore } from '../../core/ui/ui.store';
+import { WorldStore } from '../experiment-panel/world.store';
 import { drawObserverFrame } from './observer-canvas.renderer';
 
 @Component({

@@ -1,8 +1,8 @@
 import { Injectable, inject, OnDestroy } from '@angular/core';
-import { MAX_FRAME_DT_SEC } from '../core/constants/time.constants';
-import { SimulationStore } from '../state/simulation.store';
-import { SpaceTimeService } from './space-time.service';
-import { WorldService } from './world.service';
+import { MAX_FRAME_DT_SEC } from '../constants/time.constants';
+import { SimulationStore } from '../../features/time-player/simulation.store';
+import { SpaceTimeService } from '../../features/velocity-controls/space-time.service';
+import { WorldService } from '../../features/experiment-panel/world.service';
 
 export type FrameDrawCallback = (dtSec: number) => void;
 

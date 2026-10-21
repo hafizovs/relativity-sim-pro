@@ -1,9 +1,9 @@
 import { Injectable, inject, OnDestroy } from '@angular/core';
-import { BETA_PRESETS } from '../core/constants/ui.constants';
-import { SpaceTimeService } from './space-time.service';
-import { WorldService } from './world.service';
+import { BETA_PRESETS } from '../constants/ui.constants';
+import { SpaceTimeService } from '../../features/velocity-controls/space-time.service';
+import { WorldService } from '../../features/experiment-panel/world.service';
 import { ScreenshotService } from './screenshot.service';
-import { UiStore } from '../state/ui.store';
+import { UiStore } from '../ui/ui.store';
 
 @Injectable({ providedIn: 'root' })
 export class HotkeysService implements OnDestroy {

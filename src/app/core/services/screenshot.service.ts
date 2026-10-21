@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { UiStore } from '../state/ui.store';
+import { UiStore } from '../ui/ui.store';
 
 @Injectable({ providedIn: 'root' })
 export class ScreenshotService {

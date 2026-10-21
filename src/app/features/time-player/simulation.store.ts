@@ -1,6 +1,6 @@
 import { Injectable, computed, signal } from '@angular/core';
-import { CLOCK_RUNNING_DEFAULT, TIME_SCALE_DEFAULT } from '../core/constants/time.constants';
-import type { AppPhase } from '../core/models/app-phase.model';
+import { CLOCK_RUNNING_DEFAULT, TIME_SCALE_DEFAULT } from '../../core/constants/time.constants';
+import type { AppPhase } from '../../core/models/app-phase.model';
 
 @Injectable({ providedIn: 'root' })
 export class SimulationStore {

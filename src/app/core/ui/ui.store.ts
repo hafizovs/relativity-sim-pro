@@ -1,8 +1,8 @@
 import { Injectable, signal } from '@angular/core';
-import { LOCALE_DEFAULT, THEME_DEFAULT } from '../core/constants/ui.constants';
-import type { ActiveCanvasId, MobileTabId } from '../core/models/relativity.types';
-import type { LocaleId } from '../core/models/locale.model';
-import type { ThemeId } from '../core/models/theme.model';
+import { LOCALE_DEFAULT, THEME_DEFAULT } from '../constants/ui.constants';
+import type { ActiveCanvasId, MobileTabId } from '../models/relativity.types';
+import type { LocaleId } from '../models/locale.model';
+import type { ThemeId } from '../models/theme.model';
 
 @Injectable({ providedIn: 'root' })
 export class UiStore {

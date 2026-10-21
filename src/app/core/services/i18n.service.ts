@@ -3,7 +3,7 @@ import { EN } from '../i18n/dictionaries/en';
 import { RU } from '../i18n/dictionaries/ru';
 import type { I18nKey } from '../i18n/i18n.keys';
 import type { LocaleId } from '../i18n/locale.type';
-import { UiStore } from '../state/ui.store';
+import { UiStore } from '../ui/ui.store';
 
 const DICTS: Record<LocaleId, Record<I18nKey, string>> = {
   ru: RU,

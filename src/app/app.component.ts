@@ -6,12 +6,12 @@ import {
   OnInit,
 } from '@angular/core';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
-import { HotkeysHelpComponent } from './features/hotkeys-help/hotkeys-help.component';
-import { ToolbarComponent } from './features/toolbar/toolbar.component';
-import { HotkeysService } from './services/hotkeys.service';
-import { RenderLoopService } from './services/render-loop.service';
-import { WorldService } from './services/world.service';
-import { UiStore } from './state/ui.store';
+import { HotkeysHelpComponent } from './shared/hotkeys-help/hotkeys-help.component';
+import { ToolbarComponent } from './core/layout/toolbar/toolbar.component';
+import { HotkeysService } from './core/services/hotkeys.service';
+import { RenderLoopService } from './core/services/render-loop.service';
+import { WorldService } from './features/experiment-panel/world.service';
+import { UiStore } from './core/ui/ui.store';
 
 @Component({
   selector: 'rsp-root',

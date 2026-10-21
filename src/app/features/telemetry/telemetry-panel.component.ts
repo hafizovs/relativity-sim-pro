@@ -6,10 +6,10 @@ import {
   formatRatio,
   formatTimeSec,
 } from '../../domain/relativity/format-relativity';
-import { I18nService } from '../../services/i18n.service';
-import { SimulationStore } from '../../state/simulation.store';
-import { SpaceTimeStore } from '../../state/space-time.store';
-import { WorldStore } from '../../state/world.store';
+import { I18nService } from '../../core/services/i18n.service';
+import { SimulationStore } from '../time-player/simulation.store';
+import { SpaceTimeStore } from '../velocity-controls/space-time.store';
+import { WorldStore } from '../experiment-panel/world.store';
 
 @Component({
   selector: 'rsp-telemetry-panel',

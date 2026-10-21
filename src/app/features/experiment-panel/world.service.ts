@@ -1,13 +1,13 @@
 import { Injectable, inject } from '@angular/core';
-import { MAX_ACTIVE_LASERS } from '../core/constants/space.constants';
-import type { LaserDirection } from '../core/models/laser-pulse.model';
-import { createLaserPulse } from '../domain/relativity/laser-kinematics';
-import { createPlanetCatalog } from '../domain/space/planet-catalog';
-import { generateStarfield } from '../domain/space/starfield-generator';
-import { worldStep } from '../domain/space/world-step';
-import { SimulationStore } from '../state/simulation.store';
-import { SpaceTimeStore } from '../state/space-time.store';
-import { WorldStore } from '../state/world.store';
+import { MAX_ACTIVE_LASERS } from '../../core/constants/space.constants';
+import type { LaserDirection } from '../../core/models/laser-pulse.model';
+import { createLaserPulse } from '../../domain/relativity/laser-kinematics';
+import { createPlanetCatalog } from '../../domain/space/planet-catalog';
+import { generateStarfield } from '../../domain/space/starfield-generator';
+import { worldStep } from '../../domain/space/world-step';
+import { SimulationStore } from '../time-player/simulation.store';
+import { SpaceTimeStore } from '../velocity-controls/space-time.store';
+import { WorldStore } from './world.store';
 
 @Injectable({ providedIn: 'root' })
 export class WorldService {

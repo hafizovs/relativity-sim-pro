@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { BETA_MAX, BETA_MIN, BETA_STEP } from '../../core/constants/physics.constants';
 import { formatBeta, formatGamma } from '../../domain/relativity/format-relativity';
-import { I18nService } from '../../services/i18n.service';
-import { SpaceTimeService } from '../../services/space-time.service';
+import { I18nService } from '../../core/services/i18n.service';
+import { SpaceTimeService } from './space-time.service';
 
 @Component({
   selector: 'rsp-velocity-controls',

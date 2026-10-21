@@ -3,12 +3,12 @@ import {
   REST_MASS_DEFAULT,
   SHIP_PROPER_HEIGHT,
   SHIP_PROPER_LENGTH,
-} from '../core/constants/physics.constants';
-import { SHIP_START_X, SHIP_START_Y } from '../core/constants/space.constants';
-import type { LaserPulse } from '../core/models/laser-pulse.model';
-import type { Planet } from '../core/models/planet.model';
-import type { ShipState } from '../core/models/ship.model';
-import type { Star } from '../core/models/star.model';
+} from '../../core/constants/physics.constants';
+import { SHIP_START_X, SHIP_START_Y } from '../../core/constants/space.constants';
+import type { LaserPulse } from '../../core/models/laser-pulse.model';
+import type { Planet } from '../../core/models/planet.model';
+import type { ShipState } from '../../core/models/ship.model';
+import type { Star } from '../../core/models/star.model';
 
 @Injectable({ providedIn: 'root' })
 export class WorldStore {

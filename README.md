@@ -1,3 +1,7 @@
+## Live demo
+
+https://hafizovs.github.io/relativity-sim-pro/
+
 # RelativitySim Pro
 
 Интерактивный симулятор **Специальной теории относительности** (Angular 22+, Signals, Canvas 2D).
@@ -14,7 +18,7 @@ npm start
 Откройте `http://localhost:4200/`.
 
 ```bash
-npm test    # unit-тесты физики
+npm test
 npm run build
 ```
 

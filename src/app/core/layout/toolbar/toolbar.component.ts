@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
-import { BETA_PRESETS } from '../../core/constants/ui.constants';
+import { BETA_PRESETS } from '../../constants/ui.constants';
 import { I18nService } from '../../services/i18n.service';
 import { ScreenshotService } from '../../services/screenshot.service';
-import { SpaceTimeService } from '../../services/space-time.service';
-import { UiStore } from '../../state/ui.store';
+import { SpaceTimeService } from '../../../features/velocity-controls/space-time.service';
+import { UiStore } from '../../ui/ui.store';
 
 @Component({
   selector: 'rsp-toolbar',

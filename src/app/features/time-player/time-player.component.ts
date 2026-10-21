@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TIME_SCALE_OPTIONS } from '../../core/constants/time.constants';
-import { I18nService } from '../../services/i18n.service';
-import { SpaceTimeService } from '../../services/space-time.service';
-import { WorldService } from '../../services/world.service';
-import { SimulationStore } from '../../state/simulation.store';
+import { I18nService } from '../../core/services/i18n.service';
+import { SpaceTimeService } from '../velocity-controls/space-time.service';
+import { WorldService } from '../experiment-panel/world.service';
+import { SimulationStore } from './simulation.store';
 
 @Component({
   selector: 'rsp-time-player',

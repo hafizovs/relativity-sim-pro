@@ -4,10 +4,10 @@ import {
   C,
   REST_MASS_DEFAULT,
   SHIP_PROPER_LENGTH,
-} from '../core/constants/physics.constants';
-import type { RelativityMetrics } from '../core/models/relativity-metrics.model';
-import { contractLength } from '../domain/relativity/length-contraction';
-import { clampBeta, gamma } from '../domain/relativity/lorentz-factor';
+} from '../../core/constants/physics.constants';
+import type { RelativityMetrics } from '../../core/models/relativity-metrics.model';
+import { contractLength } from '../../domain/relativity/length-contraction';
+import { clampBeta, gamma } from '../../domain/relativity/lorentz-factor';
 
 @Injectable({ providedIn: 'root' })
 export class SpaceTimeStore {
