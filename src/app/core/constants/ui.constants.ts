@@ -1,6 +1,6 @@
 import type { BetaPreset } from '../models/beta-preset.model';
 
-export const LOCALE_DEFAULT = 'ru' as const;
+export const LOCALE_DEFAULT = 'en' as const;
 export const THEME_DEFAULT = 'dark' as const;
 export const TELEMETRY_WIDTH_PX = 320;
 export const BOTTOM_BAR_HEIGHT_PX = 88;
