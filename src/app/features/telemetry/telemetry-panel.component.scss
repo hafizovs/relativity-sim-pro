@@ -78,3 +78,24 @@
   color: var(--rsp-text-muted);
   line-height: 1.35;
 }
+
+@media (max-width: 1099px) {
+  .telemetry {
+    border-left: none;
+  }
+
+  .row {
+    gap: 0.5rem;
+  }
+
+  .label {
+    font-size: 0.72rem;
+    min-width: 0;
+  }
+
+  .value {
+    font-size: 0.82rem;
+    text-align: right;
+    word-break: break-word;
+  }
+}

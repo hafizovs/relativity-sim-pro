@@ -49,3 +49,10 @@ button:focus-visible {
   outline: 2px solid var(--rsp-accent);
   outline-offset: 2px;
 }
+
+@media (max-width: 768px) {
+  .experiment {
+    max-width: none;
+    width: 100%;
+  }
+}

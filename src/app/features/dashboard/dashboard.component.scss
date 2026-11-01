@@ -94,6 +94,7 @@
 
   .dashboard__grid {
     grid-template-columns: 1fr;
+    grid-template-rows: minmax(240px, 1fr);
   }
 
   .panel--hidden-mobile {
@@ -102,5 +103,39 @@
 
   .panel {
     border-right: none;
+  }
+
+  .panel__label {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-tabs {
+    padding: 0.45rem 0.5rem;
+  }
+
+  .mobile-tabs button {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.25rem;
+  }
+
+  .bottom-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    min-height: 0;
+    padding: 0.5rem 0.65rem 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-tabs button {
+    font-size: 0.62rem;
+    letter-spacing: 0.02em;
+  }
+
+  .bottom-bar {
+    padding: 0.45rem 0.5rem 0.55rem;
   }
 }
