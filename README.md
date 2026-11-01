@@ -73,3 +73,7 @@ npm run build
 ## Disclaimer
 
 This is a **teaching 2D visualization** of special relativity. It does not replace a textbook and does not model general relativity, the full relativistic emission of extended disks, or exact spectral synthesis. The term “relativistic mass” \(m\gamma\) is pedagogical.
+
+## Responsive layout
+
+Partial adaptive chrome for phone (~375px) and tablet (~768px): toolbars and panels stack or collapse on narrow viewports, with no page-level horizontal scroll. Desktop-first cores (canvas, boards, dense tables) stay simplified on small screens rather than a full mobile redesign.
